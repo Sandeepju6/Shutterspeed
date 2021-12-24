@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+p
+{
+    font-weight: 300;
+    color: #111;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo
+{
+    color: #111;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo
+{
+  color: #111;  
+}
+header .logo span
+{
+    color: #111; 
+}
+header .navigation
+{
+    position: relative;
+    display: flex;   
+}
+header .navigation li
+{
+     list-style: none;
+     margin-left: 30px;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: #111;
+    font-weight: 300;   
+
+}
+header.sticky .navigation li a
+{
+    color: #111;
+}
+header .navigation li a:hover
+{
+    color: #add8e6;
+}
+section
+{
+    padding: 100px;
+}
+.titleText
+{
+    color: #111;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 300; 
+    text-align: center;
+}
+.titleText span
+{
+    color: #111;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.about
+{
+    background: url(images/form_bg.jpg);
+    background-size: cover;
+}
+.contactForm
+{
+   padding: 75px 50px; 
+   background: #fff;
+   box-shadow: 0 1px 50px;
+   max-width: 500px;
+   margin-top: 50px;
+}
+.contactForm h3
+{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+  width: 100%;
+  border: 1px solid #555;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 16px; 
+  font-weight: 300;
+  resize: none; 
+}
+.contactForm .inputBox input[type="submit"]
+{
+    font-size: 1em;
+    color:#111;
+    background:#add8e6;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.footerText
+{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+.footerText p
+{
+ color: #111;
+ font-weight: 500;
+ text-decoration: none;   
+}
+
+@media (max-width: 991px)
+{
+    header,
+    header.sticky
+{
+padding: 10px 20px;
+}
+header .navigation
+{
+    display: none;
+}
+header .navigation.active
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+     align-items: center;
+     flex-direction: column;
+     background: #fff;
+
+}
+header .navigation li 
+{   
+    margin-left: 0;
+}
+header .navigation li a
+{
+    color: #111;
+    font-size: 1.5em;
+}
+.menuToggle
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(navbar.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+}
+.menuToggle.active
+{
+    background: url(close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header.sticky .menuToggle
+{
+    filter: invert(1);
+}
+section{
+    padding: 20px;
+}
+.title
+{
+   text-align: center; 
+}
+,.titleText
+{
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+.contactForm
+{
+    padding: 35px 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+}
+

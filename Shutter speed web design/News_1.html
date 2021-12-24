@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charser="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <title>SHUTTER SPEED</title>
+    <link rel="stylesheet" href="style_news.css">
+</head>
+<body>
+    <header>
+         <a href="home_page.html" class="logo">SHUTTER SPEED<span></span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="camera.html">camera</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </header>
+<br><br><br>
+    <section class="news" id="news">
+        <div class="row">
+            <div class="col50">
+              <h2 class="titleText"><span>C</span>anon launches C70.</h2> 
+              <p>Canon on Friday launched its new video focused Canon EOS C70 camera, the newest addition
+ to the company's Cinema EOS System. The Canon EOS C70 comes with Canon's RF lens mount and is compatible
+ with a new Mount Adapter EF-EOS R 0.71, which the company announced alongside the camera. The EOS is the
+ first camera in the company's Cinema EOS System to be equipped with an RF mount, which makes it compatible
+ with any of the RF lenses from Canon's EOS R System. The EOS C70 can record videos at 4k/120P using its 
+35mm CMOS DGO (Dual Gain Output) sensor.
+
+The Canon EOS C70 is able to capture 4K video in 4:2:2 (10 bit) colour. It is equipped with a DIGIC DV image-processing
+ platform that is capable of high-speed processing, enabling the device to record high frame-rate video at 4K/120P and
+ at 2K/180P. It also houses Canon's Dual Pixel CMOS AF technology that enables Intelligent Tracking and Recognition System.
+ The Canon EOS C70 also comes with Face Detection AutoFocus (AF). Canon EOS C70 also features a headphone jack and USB type-C port.
+ For easy handling, the EOS C70 comes with a removable top-mounted handle. Further, Canon has provided Direct Touch Control function along with various shooting options.
+
+Canon has not revealed anything about the EOS C70 pricing in India. In the United States, the camera is has been
+ made available at $5,499 (Rs. 4,05,270 by direct conversion. The Mount Adapter EF-EOS R 0.71x has been priced at
+ $599.99 (Rs. 44,210 by direct conversion).</p>
+              </div>
+                          <div class="col50">
+                            <div class="imgBx">
+                                <img src="images/c70.jpg">
+                            </div>
+                            </div>
+                            </div>
+</section>
+<section class="breaking" id="news">
+  <div class="title">
+        <h2 class="titleText">More news</h2>
+        </div>
+<div class="content">
+<div class="box">
+        <div class="ImgBx">
+            <img src="images/tripod.jpg">
+        </div>
+        <div class="text">
+            <h3>Benro launches Rhino</h3>
+            <a href="news_2.html" class="btn">Read more</a>
+            </div>
+            </div>
+            <div class="box">
+                <div class="ImgBx">
+                    <img src="images/lens1.jpg">
+                </div>
+                <div class="text">
+                    <h3>Sigma launches new lens</h3>
+                    <a href="news.html" class="btn">Read more</a>
+                    </div>
+                </div>
+    </section>
+
+    
+
+ <div class="footerText">
+       <p>Thanks for visiting. @ShutterSpeed 2020.</p>
+   </div>
+
+    <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY , 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+         </script>
+</body>
+</html>

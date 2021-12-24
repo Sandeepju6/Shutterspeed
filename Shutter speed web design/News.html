@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charser="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <title>SHUTTER SPEED</title>
+    <link rel="stylesheet" href="style_news.css">
+</head>
+<body>
+    <header>
+        <a href="home_page.html" class="logo">SHUTTER SPEED<span></span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="camera.html">camera</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </header>
+<br><br><br>
+    <section class="news" id="news">
+        <div class="row">
+            <div class="col50">
+              <h2 class="titleText"><span>S</span>igma Adds 105mm F2.8 Macro Lens for Full-Frame Mirrorless</h2> 
+              <p>Sigma's newest full-frame lens is a macro, 
+                  built for mirrorless systems. The 105mm F2.8
+                   DG DN Macro Art comes in a classic focal length
+                    for macro work, and focuses close enough to project
+                     subjects onto your camera's sensor at life-size—a 
+                     boon for getting the most detail out of really tiny
+                      subjects. The lens sports a fresh optical formula,
+                       designed specifically for mirrorless systems.
+                        It's being sold it in two versions—E-mount for Sony
+                         and L-mount for cameras from Leica, Panasonic, 
+                         and Sigma. As you'd expect, the 105mm Macro is 
+                         protected from dust and splashes, just like most 
+                         full-frame camera systems. It doesn't include 
+                         stabilization, but many compatible cameras offer 
+                         in-body stabilization, and macro work is often done 
+                         with the aid of a tripod. <br><br> It's an important lens for 
+                         L-mount owners—it's the first purpose built macro lens 
+                         for the system—and E-mount owners can look at it as a 
+                         more affordable alternative to the Sony FE 90mm Macro. 
+                         If you're an L-mount owner, you can pair a compatible 
+                         teleconverter to extend the focal length and net photos 
+                         with larger than life-size magnification. Other features 
+                         include hypersonic autofocus motors—macro lenses aren't
+                          well known as fast focusers, but Sigma promises quiet, 
+                          quick focus here. There's a focus limiter switch too, 
+                          so you can prevent the lens from looking for distant 
+                          subjects when photographing close-up, or vice versa, 
+                          as well as an aperture ring that can operate with or 
+                          without detent clicks. We've not yet had a chance to 
+                          test the 105mm Macro F2.8 DG DN Macro Art, but Sigma 
+                          tells us to expect the lens soon—it's going to go on 
+                          sale to customers in October, with a $799 asking price, 
+                          very reasonable when compared with similar options for other 
+                          camera systems.</p>
+              </div>
+                          <div class="col50">
+                            <div class="imgBx">
+                                <img src="images/lens1.jpg">
+                            </div>
+                            </div>
+                            </div>
+</section>
+<section class="breaking" id="news">
+  <div class="title">
+        <h2 class="titleText">More news</h2>
+        </div>
+<div class="content">
+<div class="box">
+        <div class="ImgBx">
+            <img src="images/tripod.jpg">
+        </div>
+        <div class="text">
+            <h3>Benro launches Rhino</h3>
+            <a href="news_2.html" class="btn">Read more</a>
+            </div>
+            </div>
+            <div class="box">
+                <div class="ImgBx">
+                    <img src="images/c70.jpg">
+                </div>
+                <div class="text">
+                    <h3>Canon launches C70</h3>
+                    <a href="news_1.html" class="btn">Read more</a>
+                    </div>
+                </div>
+    </section>
+
+    
+
+ <div class="footerText">
+       <p>Thanks for visiting. @ShutterSpeed 2020.</p>
+   </div>
+
+    <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY , 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+         </script>
+</body>
+</html>

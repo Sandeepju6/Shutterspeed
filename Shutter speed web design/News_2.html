@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charser="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <title>19BAM0032 IVINRAHUL I</title>
+    <link rel="stylesheet" href="style_news.css">
+</head>
+<body>
+    <header>
+         <a href="home_page.html" class="logo">SHUTTER SPEED<span></span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="camera.html">camera</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </header>
+<br><br><br>
+    <section class="news" id="news">
+        <div class="row">
+            <div class="col50">
+              <h2 class="titleText"><span>B</span>enro launches Rhino</h2> 
+              <p>It's no secret that we've been fans of Benro's recent tripods,
+ with the GoPlus Travel FGP18A currently topping our list of best travel tripods.
+ But Benro isn't resting on its laurels and has upped the ante even more with the
+ release of its new Rhino tripod range. Rhino is positioned as the flagship series
+ in Benro's extensive tripod range, and at launch there will be four size options available.
+ All use new braided carbon fibre tubing, which helps the smallest Rhino tripod 
+(product code FRHN05CVX20) weigh just 1.2kg while also boasting a huge 10kg max payload.
+ At the top of the Rhino range is the beefy FRHN34CVX30, which can reach a whopping 170cm
+ fully extended and support an incredible 20kg of kit. Extra height can be easily achieved
+ by raising the extendable and reversible centre column, or this can be completely removed
+ and paired with one of the tripod legs to create a monopod. All Rhino tripods have the ability
+ to mount accessory arms via three 3/8” threads - ideal for using a small LED panel or microphone
+ during video shoots. Portability is paramount with any tripod, so it's no surprise that
+ all Rhino tripods pack as small as possible using reverse folding legs that flip up to surround
+ the head when stowed. Ergonomic twist-lock leg extension clamps further maintain a slim packed profile,
+ and each leg gets three-step self-adaptive rubber feet to improve stability on rough and uneven surfaces.
+ Leg angle adjustment is achieved using a new auto-hold trigger mechanism: simply pull the angle adjuster clamp,
+ move each leg to the angle you want, then press a button on the side of the leg and the angle clamp instantly
+ retracts back to lock the leg angle in position.</p>
+              </div>
+                          <div class="col50">
+                            <div class="imgBx">
+                                <img src="images/tripod.jpg">
+                            </div>
+                            </div>
+                            </div>
+</section>
+<section class="breaking" id="news">
+  <div class="title">
+        <h2 class="titleText">More news</h2>
+        </div>
+<div class="content">
+        <div class="box">
+                <div class="ImgBx">
+                    <img src="images/c70.jpg">
+                </div>
+                <div class="text">
+                    <h3>Canon launches c70</h3>
+                    <a href="news_1.html" class="btn">Read more</a>
+            </div>
+            </div>
+            <div class="box">
+                <div class="ImgBx">
+                    <img src="images/lens1.jpg">
+                </div>
+                <div class="text">
+                    <h3>Sigma launches new lens</h3>
+                    <a href="news.html" class="btn">Read more</a>
+                    </div>
+                </div>
+    </section>
+
+    
+
+ <div class="footerText">
+       <p>Thanks for visiting. @ShutterSpeed 2020.</p>
+   </div>
+
+    <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY , 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+         </script>
+</body>
+</html>

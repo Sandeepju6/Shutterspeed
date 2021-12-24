@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charser="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <title>SHUTTER SPEED</title>
+    <link rel="stylesheet" href="style_review.css">
+</head>
+<body>
+    <header>
+        <a href="home_page.html" class="logo">SHUTTER SPEED<span></span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="camera.html">camera</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </header>
+<br><br><br>
+    <section class="news" id="news">
+        <div class="row">
+            <div class="col50">
+              <h2 class="titleText"><span>D</span>SLR or Mirrorless?</h2> 
+              <p>The difference in image quality between the two is narrowing and
+ technological advancements are pushing many in favour of mirrorless cameras rather
+ than the traditional DSLRs. We've compared them to help you understand the differences 
+and make a choice between the two.
+Digital single-lens reflex (DSLR) and mirrorless (often referred to as compact system) cameras
+ are both interchangeable lens cameras, with features for more advanced photography.
+ There are a range of models available for each, from those aimed at entry-level photography
+ enthusiasts to professionals. Both cameras typically have big sensors, allowing them to let
+ in more light and essentially capture more detail than a standard digital camera. The main
+ difference between the two is that DSLR cameras have a reflex mirror inside them, which bounces
+ light up into the optical viewfinder. With a mirrorless camera, light goes directly into the image
+ sensor and they will have an electronic viewfinder or LCD monitor to display a preview of the image.
+
+Despite mirrorless cameras becoming more widely available and closer to DSLR cameras in quality,
+ there are pros and cons to both.  With an ‘old-school’ DSLR, there tend to be perks,
+ which is most noticeably the superior speed when autofocusing or tracking subjects – although this is changing.
+  Traditionally DSLR cameras use ‘phase detection’ autofocus modules in the body of the camera, which make autofocusing
+ and tracking subjects fast.  Mirrorless cameras rely on sensor-based autofocus, which analyses the maximum contrast 
+between pixels on the camera’s sensor. When the contrast is highest, the subject is in focus. This method is traditionally slower
+ and also tends to struggle with moving subjects, as it doesn’t involve measuring distance, just the level of contrast.
+  However, advancements in high-end cameras will see ‘hybrid’ autofocus systems featuring in the best mirrorless cameras,
+ narrowing the gap between the autofocusing speeds of DSLR and mirrorless cameras. That said – there is a reason why DSLR
+ cameras continue to be manufactured and stay the favourite of both amateurs and professionals.
+
+</p>
+              </div>
+                          <div class="col50">
+                            <div class="imgBx">
+                                <img src="images/canon.jpg">
+                            </div>
+                            </div>
+                            </div>
+</section>
+<section class="breaking" id="news">
+  <div class="title">
+        <h2 class="titleText">More reviews</h2>
+        </div>
+<div class="content">
+<div class="box">
+        <div class="ImgBx">
+            <img src="images/alpha.jpg">
+        </div>
+        <div class="text">
+            <h3>Sony Alpha A7R III Magic</h3>
+            <a href="review_3.html" class="btn">Read more</a>
+            </div>
+            </div>
+            <div class="box">
+                <div class="ImgBx">
+                    <img src="images/lens2.jpg">
+                </div>
+                <div class="text">
+                    <h3>Which lens should you buy?</h3>
+                    <a href="review_1.html" class="btn">Read more</a>
+                    </div>
+                </div>
+<div class="box">
+                <div class="ImgBx">
+                    <img src="images/cam1.jpg">
+                </div>
+                <div class="text">
+                    <h3>Which camera should you buy?</h3>
+                    <a href="review.html" class="btn">Read more</a>
+                    </div>
+                </div>
+    </section>
+
+    
+
+ <div class="footerText">
+       <p>Thanks for visiting. @ShutterSpeed 2020.</p>
+   </div>
+
+    <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY , 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+         </script>
+</body>
+</html>

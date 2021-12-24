@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charser="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <title>SHUTTER SPEED</title>
+    <link rel="stylesheet" href="style_about.css">
+</head>
+<body>
+    <header>
+        <a href="home_page.html" class="logo">SHUTTER SPEED<span></span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="camera.html">camera</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </header>
+<br><br><br>
+ <section class="about" id="about">
+       <div class="title">
+           <h2 class="titleText"><span>A</span>bout us</h2>
+           <p>Shutter speed is a website where you can find everything about cameras from news to reviews.</p>  
+       </div>
+       <div class="contactForm">
+           <h3>Let us know your thoughts</h3>
+           <div class="inputBox">
+               <input type="text" placeholder="Enter your name">
+               </div>
+               <div class="inputBox">
+               <input type="text" placeholder="Enter your Email">
+           </div>
+           <div class="inputBox">
+               <textarea placeholder="Type here"></textarea>
+       </div>
+       <div class="inputBox">
+       <input type="submit" value="send">
+</div>
+</div>
+   </section>
+   
+   <div class="footerText">
+       <p>Thanks for visiting. @ShutterSpeed 2020.</p>
+   </div>
+
+    <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY , 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+         </script>
+</body>
+</html>

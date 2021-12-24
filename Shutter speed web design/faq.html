@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charser="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <title>SHUTTER SPEED</title>
+    <link rel="stylesheet" href="style_faq.css">
+</head>
+<body>
+    <header>
+         <a href="home_page.html" class="logo">SHUTTER SPEED<span></span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="review">Review</a></li>
+            <li><a href="camera.html">camera</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+        <h2>FAQ</h2>
+
+        <p>Frequently Asked questions</p>
+</div>
+    </section>                    
+        <div class="title">
+        <h2 class="titleText">What is a <span>DSLR?</span></h2>
+<p>First and foremost, what is a DSLR camera? And how is it different from other cameras?
+
+A digital single lens reflex or DSLR is a camera with interchangeable lenses and a mirror that directs light from the lens to the viewfinder, which enables the user to see exactly what the lens sees, resulting in a more true-to-life image.
+
+The DSLR camera’s design, which combines the optics and mechanisms of an SLR (film) camera with a digital imaging sensor, is what sets it apart from other types of cameras. It also comes with many powerful functions and features that allow the user to manipulate the camera’s capability to shoot a particular scene, thereby manipulating the final photographic results.</p>
+        </div>
+        </div>
+   <div class="title">
+        <h2 class="titleText">How does a <span>DSLR</span>work?</h2>
+<p>The DSLR’s viewfinder helps you frame your subject by having the scene pass through the lens in light form into a reflex mirror, which bounces off the light vertically to a pentamirror or pentaprism. The pentaprism then converts the vertical light to horizontal light by bouncing it off right into the viewfinder through two separate mirrors.
+
+When you press the shutter button, the reflex mirror opens up so that light goes right through it. Then, the shutter mechanism opens up (allowing the light to reach the image sensor) until the image sensor completes recording the image. As the image is processed and converted into the right format by the DSLR, the shutter closes and the reflex mirror returns to its original position.</p>
+</div>
+</div>
+<div class="title">
+        <h2 class="titleText">What are the advantages of having a <span>DSLR?</span></h2>
+<p>  More shooting flexibility.</p>
+<p> High quality images </p>
+<p> Ability to control the settings</p>
+<p> Cost effective </p>
+</div>
+</div>
+<div class="title">
+        <h2 class="titleText">How do I choose the <span>PERFECT DSLR?</span></h2>
+<p> Figure out your shooting needs</p>
+<p> Consider your budget</p>
+<p> Determine the weight you can carry</p>
+
+</div>
+</div>
+
+
+ <div class="footerText">
+       <p>Thanks for visiting. @ShutterSpeed 2020.</p>
+   </div>
+
+    <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY , 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+         </script>
+</body>
+</html>
